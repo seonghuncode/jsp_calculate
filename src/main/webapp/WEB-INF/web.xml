@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+  <servlet>
+    <description></description>
+    <display-name>Oper</display-name>
+    <servlet-name>Oper</servlet-name>
+    <servlet-class>com.oline.servlet.Oper</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Oper</servlet-name>
+    <url-pattern>/Oper</url-pattern>
+  </servlet-mapping>
+  <display-name>calculate</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  
+  <servlet>
+  	<servlet-name>calc</servlet-name>
+  	<jsp-file>/calc.jsp</jsp-file>
+  </servlet>			<!-- calc의 경로는 calc.jsp이다/ calc.jsp은 calc이다--> 
+  
+  <servlet-mapping>
+  	<servlet-name>calc</servlet-name>
+  	<url-pattern>/calc</url-pattern>
+  </servlet-mapping>
+  <!-- 해당 url이 들어오면 clac로 가라 url패턴은 /url이다 -->
+  
+</web-app>
